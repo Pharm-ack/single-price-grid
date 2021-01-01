@@ -1,0 +1,145 @@
+* {
+  font-family: 'Karla', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: hsl(203, 41%, 91%);
+  font-size: 16px;
+  overflow: hidden;
+}
+
+button {
+  background: hsl(71, 73%, 54%);
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 90%;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.attribution {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+li {
+  list-style: none;
+}
+
+.na {
+  color: hsl(179, 62%, 43%);
+}
+
+.na2 {
+  color: hsl(71, 73%, 54%);
+}
+.dollar {
+  font-size: 40px;
+  color: #fff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 0.35fr);
+  grid-template-rows: 0.7fr 0.7fr;
+  margin: auto;
+  margin-left: 27%;
+  margin-top: 10%;
+  grid-template-areas: 
+  "section1 section1"
+  "section2 section3";
+}
+
+.section1 {
+  background: #fff;
+  color:    hsl(218, 22%, 67%);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  border-radius: 3px;
+  padding: 25px 25px 25px 40px;
+  
+}
+
+.section2 {
+  background: hsl(179, 62%, 43%);
+  color:  hsl(203, 41%, 91%);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  border-radius: 3px;
+  padding: 25px 25px 25px 40px;
+}
+
+.section3 {
+  background: hsl(176, 53%, 58%);
+  color:  hsl(200, 41%, 91%);
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  -moz-box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  box-shadow: 0px 0px 0px 1px rgba(0,NaN,NaN,0.5);
+  border-radius: 3px;
+  padding: 25px 25px 25px 40px;
+}
+
+.section1 {
+  grid-area: section1;
+}
+
+.section2 {
+  grid-area: section2;
+}
+
+.section3 {
+  grid-area: section3;
+}
+
+@media (max-width: 1000px) {
+  body {
+    overflow: scroll;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: 4rem;
+    grid-template-areas: 
+    "section1"
+    "section2"
+    "section3";
+  }
+  .section1 {
+    grid-area: section1;
+  }
+  
+  .section2 {
+    grid-area: section2;
+  }
+  
+  .section3 {
+    grid-area: section3;
+  }
+
+  .attribution {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
+}
